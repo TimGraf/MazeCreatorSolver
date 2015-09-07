@@ -5,29 +5,6 @@
         <script src="./js/maze.js"></script>
     </head>
     <body>
-        <div id="description">
-            <p>
-                I was once asked on an interview to come up with a solution to solve a maze.  The maze was represented by a matrix of 10 rows by 10 columns.
-                A value of 0 in a given element in the matrix meant that that coordinate of the maze was open and a value of 1 represented a closed off, or walled,
-                coordinate.  Unfortunately I wasn't able to come up with a solution on the spot.  I am notoriously awful at producing source code for
-                solutions, on the spot in an interview situation. I guess I get too nervous or anxious and just don't tend to do well in those situations.
-            </p>
-            <p>
-                In any event the problem was interesting enough to me that once I got home and thought about the problem without being stressed for time,
-                coming up with an eloquent solution on the spot, and with the stress of wanting to get a job offer, I did come up with a solution using
-                recursion.  Basically I took the maze data in a matrix concept and extended the maze from a 2D matrix to a 3D matrix with the last matrix
-                dimension used to store whether that coordinate was visited or not during the analysis, a value of 1 or 0.  Then once the solution was found
-                marking the maze coordinates that are part of the solution path with a value of 2 in the 3rd dimension;
-            </p>
-            <p>
-                I also did some research on maze generation algorithms and found the recursive backtracker.
-            </p>
-            <a href="http://en.wikipedia.org/wiki/Maze_generation_algorithm#Recursive_backtracker" target="_blank">Maze generation algorithm: Recursive backtracker</a>
-            <p>
-                I combined the maze generation algorithm with my maze solver solution and created a solution using JavaScript to create a maze and provide the solution as well.
-                See the results below.
-            </p>
-        </div>
         <div id="container">
             <script type="text/javascript">
                 var creater = new MAZE.MazeCreatorSolver(25, 25);
